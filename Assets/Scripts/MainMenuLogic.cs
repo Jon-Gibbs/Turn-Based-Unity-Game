@@ -23,15 +23,15 @@ public class MenuLogicScript : MonoBehaviour
     //end: 957
     public void onPlayButtonSelect()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadSceneAsync("Scenes/Battle");
         
     }
-    public void onSettingsButtonUnselect()
-    {  
-
+    public void onSettingsButtonSelect()
+    {
+        SceneManager.LoadSceneAsync("Scenes/Settings");
     }
     public void onQuitButtonSelect(Object button)
     {
-
+        Application.Quit();
     }
 }
