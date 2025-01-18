@@ -11,7 +11,9 @@ public class CameraFollowingLogic : MonoBehaviour
     {
         if (player != null)
         {
+           
             transform.position = player.position + offset;
+        
         }
     }
 }
